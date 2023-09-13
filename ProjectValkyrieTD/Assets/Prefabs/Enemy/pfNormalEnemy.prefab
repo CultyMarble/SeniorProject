@@ -499,7 +499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootingPosition: {fileID: 7183821927477323505}
-  expDrop: 35
+  expDrop: 50
 --- !u!114 &1011391875932092770
 MonoBehaviour:
   m_ObjectHideFlags: 0

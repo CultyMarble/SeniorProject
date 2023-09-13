@@ -184,7 +184,7 @@ public class ATOneCoreAbility : Ability
     {
         UpdateAbilityParameter();
 
-        if (AbilityLevel >= 2)
+        if (AbilityLevel > 2)
         {
             if (EvoA == false)
             {
