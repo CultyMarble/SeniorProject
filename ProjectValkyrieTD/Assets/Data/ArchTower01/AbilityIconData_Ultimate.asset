@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0cccf9fbee77747af802e1e2de906b, type: 3}
+  m_Name: AbilityIconData_Ultimate
+  m_EditorClassIdentifier: 
+  abilityIconD: {fileID: 21300000, guid: 327427ed7c63f8444baf9599d7662bd0, type: 3}
+  abilityIconA: {fileID: 21300000, guid: 603dc5899e0e1824091077f7c1578de4, type: 3}
+  abilityIconAL: {fileID: 21300000, guid: bd948d07da7f1b64da3c69203ff1bf31, type: 3}
+  abilityIconAR: {fileID: 21300000, guid: fd73e4e96a897754cbed62d6022d7f6a, type: 3}
+  abilityIconB: {fileID: 21300000, guid: 65dac78e607359949bdd04826f73b7d0, type: 3}
+  abilityIconBL: {fileID: 21300000, guid: 5fddf29f440232d4198c2b43930942ca, type: 3}
+  abilityIconBR: {fileID: 21300000, guid: cb78c9d34e2beda45972a51093569987, type: 3}

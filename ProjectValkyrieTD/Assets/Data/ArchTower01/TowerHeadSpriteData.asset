@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d34953b35df3c40a76ad0e71004168, type: 3}
+  m_Name: TowerHeadSpriteData
+  m_EditorClassIdentifier: 
+  towerHeadD: {fileID: 946660677, guid: 6f236fd581ed0124d8d58726024e9ef8, type: 3}
+  towerHeadA: {fileID: -1042815951, guid: 6f236fd581ed0124d8d58726024e9ef8, type: 3}
+  towerHeadAL: {fileID: -1498076300, guid: 6f236fd581ed0124d8d58726024e9ef8, type: 3}
+  towerHeadAR: {fileID: -230147853, guid: 6f236fd581ed0124d8d58726024e9ef8, type: 3}
+  towerHeadB: {fileID: 1519596131, guid: 6f236fd581ed0124d8d58726024e9ef8, type: 3}
+  towerHeadBL: {fileID: 80445764, guid: 6f236fd581ed0124d8d58726024e9ef8, type: 3}
+  towerHeadBR: {fileID: -1511359100, guid: 6f236fd581ed0124d8d58726024e9ef8, type: 3}
+  abilityIconD: {fileID: 21300000, guid: 5fa2bcbb9b5481542b9e9f2ae1d98f59, type: 3}
+  abilityIconA: {fileID: 21300000, guid: e2b534f9a4cc9e3448b80b5e4a2e5a4e, type: 3}
+  abilityIconAL: {fileID: 21300000, guid: 208ab726681c8464f8caa30ffa3c7a89, type: 3}
+  abilityIconAR: {fileID: 21300000, guid: 9e1e9482e7f1a7941b2384a1af4392b3, type: 3}
+  abilityIconB: {fileID: 21300000, guid: fbb9b4c46f1a64c4097f3c3423e6bb7e, type: 3}
+  abilityIconBL: {fileID: 21300000, guid: 9b99c8311da0cf14ca11e644ecbc7513, type: 3}
+  abilityIconBR: {fileID: 21300000, guid: 3112cd42a7cf67d48ba3963fab04bc40, type: 3}
