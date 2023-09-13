@@ -27,4 +27,8 @@ public class SOItemInventoryData : ScriptableObject
 
     public float GetItemCritChanceModifier => itemCritChanceModifier;
     public float GetItemCriticalDamageModifier => itemCritDamageModifier;
+
+    // Utility
+    [SerializeField] private int itemPierceModifier = default;
+    public int GetItemPierceModifier => itemPierceModifier;
 }

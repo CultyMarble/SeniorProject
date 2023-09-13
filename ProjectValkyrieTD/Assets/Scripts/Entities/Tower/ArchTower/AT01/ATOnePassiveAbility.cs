@@ -41,6 +41,13 @@ public class ATOnePassiveAbility : Ability
     public float TotalChaosDamageModifierEffect => totalChaosDamageModifierEffect;
 
     //===========================================================================
+    protected override void Awake()
+    {
+        base.Awake();
+
+        currentAbilityIcon = AbilityIconData.AbilityIconD;
+    }
+
     private void OnEnable()
     {
         UpdateAbilityParameter();

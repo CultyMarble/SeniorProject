@@ -22,7 +22,7 @@ public class ATOneCoreAbility : Ability
     private float cooldownCounter = default;
 
     // Damage
-    private readonly float baseDamage = 35.0f;
+    private readonly float baseDamage = 30.0f;
     private float abilityDamageModifier = default;
     private float totalDamage = default;
 
@@ -134,7 +134,7 @@ public class ATOneCoreAbility : Ability
                 _bullet.SetShootingPoint(shootingPoint);
                 _bullet.SetCurrentTarget(transform.parent);
 
-                _bullet.SetBulletDamage(totalDamage);
+                _bullet.SetBulletDamage(totalDamage + Random.Range(-5, 5));
 
                 _bullet.SetBulletCriticalChance(totalCritChance);
                 _bullet.SetBulletCriticalDamage(totalCritDamageModifier);
@@ -221,7 +221,7 @@ public class ATOneCoreAbility : Ability
         totalCritDamageModifier = baseCritDamageModifier + abilityCritDamageModifier + towerData.CriticalDamageModifier;
 
         // Utility
-        totalBulletPierceTime = baseBulletPierceTime + abilityBulletPierceTimeModifier;
+        totalBulletPierceTime = baseBulletPierceTime + abilityBulletPierceTimeModifier + towerData.PierceTime;
     }
 
     //===========================================================================

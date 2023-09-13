@@ -30,6 +30,10 @@ public class TowerData : MonoBehaviour
     private float critDamageModifier = default;
     public float CriticalDamageModifier => critDamageModifier;
 
+    // Utility
+    private int pierceTime = default;
+    public int PierceTime => pierceTime;
+
     //===========================================================================
     public void SetSlotItemInventoryID(int slotIndex, int itemID)
     {
@@ -68,5 +72,10 @@ public class TowerData : MonoBehaviour
     public void UpdateCritDamageModifier(float amount)
     {
         critDamageModifier += amount;
+    }
+
+    public void UpdatePierceTime(int amount)
+    {
+        pierceTime += amount;
     }
 }

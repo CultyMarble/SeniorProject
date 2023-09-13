@@ -19,4 +19,14 @@ public class PrefabItemInventory : MonoBehaviour
 
         UpdateItemUIData();
     }
+
+    public void ApplyItemStat(TowerController tower)
+    {
+        tower.GetComponent<TowerData>().UpdatePierceTime(itemData.GetItemPierceModifier);
+    }
+
+    public void RemoveItemStat(TowerController tower)
+    {
+        tower.GetComponent<TowerData>().UpdatePierceTime(-itemData.GetItemPierceModifier);
+    }
 }

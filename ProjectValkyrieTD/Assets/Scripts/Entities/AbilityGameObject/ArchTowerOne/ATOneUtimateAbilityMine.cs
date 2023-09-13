@@ -19,6 +19,9 @@ public class ATOneUtimateAbilityMine : MonoBehaviour
     private float critChance = default;
     private float critDamageModifier = default;
 
+    [Header("Explosion")]
+    [SerializeField] private Transform pfExplosion = default;
+
     //===========================================================================
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -34,6 +37,8 @@ public class ATOneUtimateAbilityMine : MonoBehaviour
         durationTimer -= Time.deltaTime;
         if (durationTimer <= 0)
         {
+            CreateExplosion();
+
             DealDamage();
         }
 
@@ -42,6 +47,8 @@ public class ATOneUtimateAbilityMine : MonoBehaviour
             delayTimer -= Time.deltaTime;
             if (delayTimer <= 0)
             {
+                CreateExplosion();
+
                 DealDamage();
             }
         }
@@ -86,6 +93,13 @@ public class ATOneUtimateAbilityMine : MonoBehaviour
 
         gameObject.SetActive(false);
         transform.position = Vector3.zero;
+    }
+
+    private void CreateExplosion()
+    {
+        Transform _explosion = Instantiate(pfExplosion);
+        _explosion.position = transform.position;
+        Destroy(_explosion.gameObject, 0.5f);
     }
 
     //===========================================================================

@@ -63,7 +63,10 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
 
         // Add Item Logic
         if (AddNewItem(_itemToAdd))
+        {
+            _itemToAdd.ApplyItemStat(TowerManager.Instance.selectedTower);
             return;
+        }
 
         // Destroy Item If Cannot Add
         _itemToAdd.gameObject.SetActive(false);
@@ -83,6 +86,7 @@ public class InventoryManager : SingletonMonobehaviour<InventoryManager>
                 if (_item.GetComponent<PrefabItemInventory>())
                 {
                     // Remove Item Effect
+                    _item.GetComponent<PrefabItemInventory>().RemoveItemStat(TowerManager.Instance.selectedTower);
 
                     // Update Item Record of Selected Tower
                     TowerManager.Instance.selectedTower.GetComponent<TowerData>().SetSlotItemInventoryID(_slot.transform.GetSiblingIndex(), 0);
